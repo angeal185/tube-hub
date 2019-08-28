@@ -1,0 +1,512 @@
+.mjs-videoactions {
+  z-index: 1;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.mjs-videoactions div {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.mjs-videoactions .btn {
+  color: #fff;
+  background: #262727;
+  background: rgba(35, 35, 35, 0.75);
+  border: none;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.mjs-videoactions .btn:hover {
+  background: #0d0d0d;
+  background: rgba(10, 10, 10, 0.75);
+}
+.fel-playclose {
+  z-index: 101;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 630px;
+  height: 270px;
+  padding: 10px;
+  margin: -133px auto;
+  background: #262727;
+  background: rgba(35, 35, 35, 0.75);
+  text-align: left;
+  font-size: 0;
+  letter-spacing: normal;
+}
+.fel-playclose .in-video-1 {
+  margin-right: 10px;
+}
+@media (max-width: 730px) {
+  .fel-playclose {
+    width: 320px;
+  }
+
+  .fel-playclose .in-video-1 {
+    margin-right: 0;
+  }
+  .fel-playclose .in-video-2 {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .fel-playclose  {
+    transform: scale(0.8);
+  }
+
+  .mjs-videoinfo__title h1 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .fel-playclose  {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 400px) {
+  .fel-playclose  {
+    display: none !important;
+  }
+}
+
+.fel-playclose > div {
+  display: inline-block;
+  vertical-align: top;
+}
+.mjs-closeplay__title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 3px 10px;
+  color: #fff;
+  text-shadow: #3a3a3a 1px 1px 1px;
+  background: #f10048;
+  font-size: 14px;
+}
+.mjs-closeplay__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 26px;
+  height: 26px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 26px;
+  cursor: pointer;
+  background: #f10048;
+  text-align: center;
+}
+.mjs-closeplay__button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -24px;
+  text-align: center;
+}
+.mjs-videoinfo {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
+@media (max-width: 460px) {
+  .mjs-videoinfo {
+    display: none!important;
+  }
+}
+.mjs-videoinfo__avatar {
+  float: left;
+}
+.mjs-videoinfo__avatar img {
+  pointer-events: all;
+  width: auto;
+  height: 60px;
+  margin: 5px;
+}
+.mjs-videoinfo__title {
+  padding: 5px 60px 5px 5px;
+}
+.mjs-videoinfo__title h1,
+.mjs-videoinfo__title h2 {
+  pointer-events: all;
+  display: block;
+  margin: 0;
+  font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.mjs-videoinfo__title h1 span,
+.mjs-videoinfo__title h2 span {
+  display: inline-block;
+  max-width: 100%;
+  padding: 2px 4px;
+  background: #262727;
+  background: rgba(35, 35, 35, 0.75);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.mjs-videoinfo__title h2 {
+  display: inline-block;
+  margin-top: 2px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.mjs-videoactions,
+.mjs-videoinfo {
+  display: none;
+}
+.jw-icon {
+  font-family: 'jw-icons';
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none;
+  background-color: transparent;
+  font-variant: normal;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -moz-osx-font-smoothing: grayscale;
+}
+/* Skin namespace */
+.jw-skin-seven {
+  /* Use this class to set a global background color for all elements. */
+  /* This is the class that houses all controls. Use this to adjust the appearance of the entire controlbar. */
+  /* Vertically aligns the timeslider and icons in the center of the controlbar. */
+  /* Sets the style for the visual playlist. */
+  /* Aligns the visual playlist above its icon. */
+  /* Sets the color of the playlist title */
+  /* Style for playlist item, current time, qualities, and caption text.*/
+  /* Color for all buttons when they are inactive. This is over-ridden with the inactive configuration in the skin block.*/
+  /* Color for when HD/CD icons are toggled on. */
+  /* Sets spacing between controlbar icons and text */
+  /* Sets the style for the prev and next icons. */
+  /* Adds the spacer style to between the play icon and the previous icon. */
+  /* Adds the spacer style to between the next item and current time.  */
+  /* Color of the display icon */
+  /* Turns the display icon container into a circle. */
+  /* Styles the timeslider rail */
+  /* Sets the color for the buffer of the timeslider rail. */
+  /* Sets the style for the elaspesd progress. */
+  /* Sets the width of the knob's container */
+  /* Sets the height for the horizontal slider container. */
+  /* Sets the position of the volume slider container. */
+  /* Sets the color of the duration text in the controlbar. */
+  /*This sets the font color and background color for the active item in HD and CC menus. */
+  /* Sets a min width for the volume container so that when it changes between mute and volume, the controlbar does not shift. */
+  /* Sets the style for the time tooltip, menu, volume. */
+  /* Sets the position for the time tooltip. */
+  /* Sets the position for the vertical volume slider. */
+  /* Sets the shape of the skip icon. */
+  /* Expand button */
+  /* Focus state */
+}
+.jw-skin-seven .jw-background-color {
+  background: #000;
+}
+.jw-skin-seven .jw-controlbar {
+  z-index: 2;
+  height: 2.5em;
+  border-top: #333 1px solid;
+}
+.jw-skin-seven .jw-group {
+  vertical-align: middle;
+}
+.jw-skin-seven .jw-playlist {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.jw-skin-seven .jw-playlist-container {
+  left: -43%;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Sets the style for the visual playlist items. */
+  /* Aligns the playlist header icon with the items in the playlist. */
+}
+.jw-skin-seven .jw-playlist-container ::-webkit-scrollbar {
+  width: 10px;
+}
+.jw-skin-seven .jw-playlist-container .jw-option {
+  border-bottom: 1px solid #444;
+  /* Allows you to adjust the color of the playlist item when hovering and has a different active style.*/
+  /* Changes the color of the label when hovering.*/
+}
+.jw-skin-seven .jw-playlist-container .jw-option:hover,
+.jw-skin-seven .jw-playlist-container .jw-option.jw-active-option {
+  background-color: black;
+}
+.jw-skin-seven .jw-playlist-container .jw-option:hover .jw-label {
+  color: #ff0046;
+}
+.jw-skin-seven .jw-playlist-container .jw-icon-playlist {
+  margin-left: 0;
+}
+.jw-skin-seven .jw-playlist-container .jw-label {
+  width: auto;
+  /* Sets the color of the play icon of the currently playing playlist item.*/
+}
+.jw-skin-seven .jw-playlist-container .jw-label .jw-icon-play {
+  color: #ff0046;
+  /* Aligns the playlist play icon with the items in the playlist. */
+}
+.jw-skin-seven .jw-playlist-container .jw-label .jw-icon-play:before {
+  padding-left: 0;
+}
+.jw-skin-seven .jw-tooltip-title {
+  background-color: #000;
+  color: #ffffff;
+}
+.jw-skin-seven .jw-text {
+  color: #fff;
+}
+.jw-skin-seven .jw-button-color {
+  color: #fff;
+  /* Color for all buttons for when they are hovered on. This is over-ridden with the active configuration in the skin block.*/
+}
+.jw-skin-seven .jw-button-color:hover {
+  color: #ff0046;
+}
+.jw-skin-seven .jw-toggle {
+  color: #ff0046;
+  /* Color for when HD/CD icons are toggled off. */
+}
+.jw-skin-seven .jw-toggle.jw-off {
+  color: #fff;
+}
+.jw-skin-seven .jw-controlbar .jw-icon:before,
+.jw-skin-seven .jw-text-elapsed,
+.jw-skin-seven .jw-text-duration {
+  padding: 0 .7em;
+}
+.jw-skin-seven .jw-controlbar {
+  /* Removes icon padding to align the playlist header icon with the items in the playlist. */
+  /* Removes icon padding to align the playlist header icon with the items in the playlist. */
+}
+.jw-skin-seven .jw-controlbar .jw-icon-prev:before {
+  padding-right: .25em;
+}
+.jw-skin-seven .jw-controlbar .jw-icon-playlist:before {
+  padding: 0 .45em;
+}
+.jw-skin-seven .jw-controlbar .jw-icon-next:before {
+  padding-left: 0.25em;
+}
+.jw-skin-seven .jw-controlbar .jw-slider-time {
+  height: 2.4em;
+}
+.jw-skin-seven .jw-controlbar .jw-slider-time .jw-slider-container {
+  height: 2.3em;
+  padding-top: 1.2em;
+}
+.jw-skin-seven .jw-controlbar .jw-slider-time .jw-slider-container .jw-knob {
+  top: auto;
+  margin-top: -0.24em;
+}
+.jw-skin-seven .jw-icon-prev,
+.jw-skin-seven .jw-icon-next {
+  font-size: 0.7em;
+}
+.jw-skin-seven .jw-icon-prev:before {
+  border-left: 1px solid #666;
+}
+.jw-skin-seven .jw-icon-next:before {
+  border-right: 1px solid #666;
+}
+.jw-skin-seven .jw-icon-display {
+  color: #fff;
+  /* Centers the display icon in it's container */
+}
+.jw-skin-seven .jw-icon-display:before {
+  padding-left: 0;
+}
+.jw-skin-seven .jw-display-icon-container {
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #333333;
+}
+.jw-skin-seven .jw-rail {
+  background-color: #384154;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.jw-skin-seven .jw-buffer {
+  background-color: #666f82;
+}
+.jw-skin-seven .jw-progress {
+  background: #ff0046;
+}
+.jw-skin-seven .jw-knob {
+  width: .6em;
+  height: .6em;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 0 1px #000;
+  -moz-box-shadow: 0 0 0 1px #000;
+  box-shadow: 0 0 0 1px #000;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+}
+.jw-skin-seven .jw-slider-horizontal {
+  /* Sets the height for the horizontal slider elements. */
+  /* Centers the knob vertically. */
+  /* Cetners the timeslider cuepoints vertically. */
+}
+.jw-skin-seven .jw-slider-horizontal .jw-slider-container {
+  height: .95em;
+}
+.jw-skin-seven .jw-slider-horizontal .jw-rail,
+.jw-skin-seven .jw-slider-horizontal .jw-buffer,
+.jw-skin-seven .jw-slider-horizontal .jw-progress {
+  height: .2em;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.jw-skin-seven .jw-slider-horizontal .jw-knob {
+  top: -0.2em;
+}
+.jw-skin-seven .jw-slider-horizontal .jw-cue {
+  top: -0.05em;
+  width: .3em;
+  height: .3em;
+  background-color: #fff;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.jw-skin-seven .jw-slider-vertical {
+  /* Sets the width for the vertical slider elements. */
+}
+.jw-skin-seven .jw-slider-vertical .jw-rail,
+.jw-skin-seven .jw-slider-vertical .jw-buffer,
+.jw-skin-seven .jw-slider-vertical .jw-progress {
+  width: 0.2em;
+}
+.jw-skin-seven .jw-volume-tip {
+  width: 100%;
+  left: -45%;
+  padding-bottom: 0.7em;
+}
+.jw-skin-seven .jw-text-duration {
+  color: #666f82;
+}
+.jw-skin-seven .jw-controlbar-right-group {
+  /* Adds a left border as a spacer between all contorlbar icons. */
+  /* Removes the border from the first icon after the time duration text. */
+}
+.jw-skin-seven .jw-controlbar-right-group .jw-icon-tooltip:before,
+.jw-skin-seven .jw-controlbar-right-group .jw-icon-inline:before {
+  border-left: 1px solid #666666;
+}
+.jw-skin-seven .jw-controlbar-right-group .jw-icon-inline:first-child:before {
+  border: 0;
+}
+.jw-skin-seven .jw-dock {
+  /* This styles the dock icons into a circle. */
+  /* This styles tooltip for dock text background. */
+}
+.jw-skin-seven .jw-dock .jw-dock-button {
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #333333;
+}
+.jw-skin-seven .jw-dock .jw-overlay {
+  -moz-border-radius: 2.5em;
+  border-radius: 2.5em;
+}
+.jw-skin-seven .jw-icon-tooltip .jw-active-option {
+  background-color: #ff0046;
+  color: #ffffff;
+}
+.jw-skin-seven .jw-icon-volume {
+  min-width: 2.6em;
+}
+.jw-skin-seven .jw-time-tip,
+.jw-skin-seven .jw-menu,
+.jw-skin-seven .jw-volume-tip,
+.jw-skin-seven .jw-skip {
+  border: 1px solid #333333;
+}
+.jw-skin-seven .jw-time-tip {
+  padding: .2em;
+  bottom: 1.3em;
+}
+.jw-skin-seven .jw-menu,
+.jw-skin-seven .jw-volume-tip {
+  bottom: 0.24em;
+}
+.jw-skin-seven .jw-skip {
+  padding: .4em;
+  -moz-border-radius: 1.75em;
+  border-radius: 1.75em;
+  /* Sets the style for the skip text. */
+}
+.jw-skin-seven .jw-skip .jw-text,
+.jw-skin-seven .jw-skip .jw-icon-inline {
+  color: #fff;
+  line-height: 1.75em;
+}
+.jw-skin-seven .jw-skip.jw-skippable:hover .jw-text,
+.jw-skin-seven .jw-skip.jw-skippable:hover .jw-icon-inline {
+  color: #ff0046;
+}
+.jw-skin-seven .jw-icon-expand {
+  border-left: 1px solid #666;
+  height: 16px;
+  line-height: 16px;
+  /* Full Screen state */
+  /* Hide on small resolution */
+}
+.jw-skin-seven .jw-icon-expand:before {
+  content: "\e608";
+  display: inline-block;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border: none !important;
+}
+.jw-skin-seven .jw-icon-expand.jw-icon-expand-off:before {
+  content: "\e613";
+}
+.jw-flag-fullscreen .jw-skin-seven .jw-icon-expand {
+  display: none;
+}
+@media (max-width: 1050px) {
+  .jw-skin-seven .jw-icon-expand {
+    display: none;
+  }
+}
+.jw-skin-seven.jw-tab-focus:focus {
+  outline: none !important;
+}
+.jw-skin-seven ~ div {
+  display: block;
+}
+.jw-skin-seven.jw-state-playing ~ .fel-playclose,
+.jw-skin-seven.jw-state-buffering ~ .fel-playclose,
+.jw-skin-seven.jw-state-error ~ .fel-playclose,
+.jw-skin-seven.jw-flag-dragging ~ .fel-playclose {
+  display: none;
+}
+.jw-skin-seven.jw-state-playing ~ .mjs-videoinfo,
+.jw-skin-seven.jw-state-buffering ~ .mjs-videoinfo,
+.jw-skin-seven.jw-state-error ~ .mjs-videoinfo,
+.jw-skin-seven.jw-flag-dragging ~ .mjs-videoinfo {
+  display: none;
+}
+.jw-skin-seven.jw-state-playing ~ .mjs-videoactions,
+.jw-skin-seven.jw-state-buffering ~ .mjs-videoactions,
+.jw-skin-seven.jw-state-error ~ .mjs-videoactions,
+.jw-skin-seven.jw-flag-dragging ~ .mjs-videoactions {
+  display: none;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9jc3MvandwbGF5ZXJfdGhlbWUubGVzcyIsImp3cGxheWVyX3RoZW1lLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLFlBQUE7RUFDQSxvQkFBQTtFQUNBLFVBQUE7RUFDQSxZQUFBO0VDQ0g7QURMRDtFQU9RLHVCQUFBO0VBQ0Esb0JBQUE7RUNDUDtBRFREO0VBWVEsYUFBQTtFQUNBLHFCQUFBO0VBQ0Esb0NBQUE7RUFDQSxjQUFBO0VBQ0EseUJBQUE7RUFBQSxvQkFBQTtFQ0FQO0FERU87RUFDSSxxQkFBQTtFQUNBLG9DQUFBO0VDQVg7QURNRDtFQUNJLFlBQUE7RUFDQSxvQkFBQTtFQUNBLFVBQUE7RUFDQSxTQUFBO0VBQ0EsVUFBQTtFQUNBLGNBQUE7RUFDQSxlQUFBO0VBQ0EsZUFBQTtFQUNBLHFCQUFBO0VBQ0EscUJBQUE7RUFDQSxvQ0FBQTtFQUNBLG9CQUFBO0VDSkg7QURVRztFQUFBO0lBSEkseUJBQUE7SUNITDtFQUNGO0FEYkQ7RUFtQlEsdUJBQUE7RUFDQSxxQkFBQTtFQ0hQO0FETUc7RUFDSSxvQkFBQTtFQUNBLFFBQUE7RUFDQSxTQUFBO0VBQ0EsbUJBQUE7RUFDQSxhQUFBO0VBQ0Esa0NBQUE7RUFDQSxxQkFBQTtFQ0pQO0FET0c7RUFDSSxvQkFBQTtFQUNBLFFBQUE7RUFDQSxVQUFBO0VBQ0EsYUFBQTtFQUNBLGNBQUE7RUFDQSxpQkFBQTtFQUNBLGtCQUFBO0VBQ0EsbUJBQUE7RUFDQSxpQkFBQTtFQUNBLHFCQUFBO0VDTFA7QURRRztFQUNJLG9CQUFBO0VBQ0EsU0FBQTtFQUNBLFVBQUE7RUFDQSxlQUFBO0VBQ0Esb0JBQUE7RUNOUDtBRFdEO0VBQ0ksWUFBQTtFQUNBLG9CQUFBO0VBQ0EsUUFBQTtFQUNBLFNBQUE7RUFDQSxVQUFBO0VBQ0Esc0JBQUE7RUNUSDtBRGVHO0VBQUE7SUFISSx5QkFBQTtJQ1JMO0VBQ0Y7QURVRztFQUNJLGFBQUE7RUNSUDtBRE9HO0VBSVEscUJBQUE7RUFDQSxh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 */
